@@ -1,6 +1,6 @@
-import { MemoryRouter as Router, Route, Routes } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
+import { Route, MemoryRouter as Router, Routes } from 'react-router-dom';
 import 'tailwindcss/tailwind.css';
+import icon from '../../assets/icon.svg';
 import './App.css';
 
 function Hello() {
@@ -9,7 +9,9 @@ function Hello() {
       <div className="Hello">
         <img width="200" alt="icon" src={icon} />
       </div>
-      <h1>electron-react-boilerplate</h1>
+      <h1 className="flex justify-center items-center font-bold">
+        electron-react-boilerplate
+      </h1>
       <div className="Hello">
         <a
           href="https://electron-react-boilerplate.js.org/"
