@@ -1,5 +1,6 @@
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import { MemoryRouter as Router, Route, Routes } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
+import 'tailwindcss/tailwind.css';
 import './App.css';
 
 function Hello() {
@@ -19,7 +20,7 @@ function Hello() {
             <span role="img" aria-label="books">
               📚
             </span>
-            Read our docs
+            <span className="text-black">Read our docs</span>
           </button>
         </a>
         <a
@@ -31,7 +32,7 @@ function Hello() {
             <span role="img" aria-label="folded hands">
               🙏
             </span>
-            Donate
+            <span className="text-black">Donate</span>
           </button>
         </a>
       </div>
